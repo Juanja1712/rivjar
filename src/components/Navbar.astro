@@ -1,0 +1,48 @@
+---
+import Rutas from '../components/icons/Rutas.astro';
+import Aseo from '../components/icons/Aseo.astro';
+import Jardineria from '../components/icons/Jardineria.astro';
+import AdminPropiedades from '../components/icons/AdminPropiedades.astro';
+---
+
+<header class="w-full flex justify-center bg-white">
+  <div class="py-4 w-[79rem]">
+    <div class="flex justify-between">
+      <div class="w-34">
+        <a href="#"><img src="/LOGO.png" alt="" /></a>
+      </div>
+      <div class="flex items-center ">
+        <ul class="font-bold text-xl text-green-primary flex gap-6 ">
+          <li><a class=" hover:text-green-second" href="/">INICIO</a></li>
+          <li class="menu-desplegable relative  ">
+            <p class="block  hover:text-green-second">SERVICIOS</p>
+            <ul class="submenu hidden absolute w-[18rem]  bg-white hover:block px-4 py-2 flex flex-col top-6 shadow-lg rounded">
+              <li class="relative"><a href="/administracion-propiedades" class="flex text-sm my-3 mx-2 items-center justify-center"> <Rutas width="20" height="20"/>Administración de Propiedades</a></li>
+              <li class="relative"><a href="/aseo" class="block text-sm my-3 mx-2"> <Aseo
+                width="60"
+                height="60"
+                />Aseo domestico</a></li>
+              <li class="relative"><a href="/jardineria" class="block text-sm my-3 mx-2"> <Jardineria
+                width="60"
+                height="60"
+                />Jardineria</a></li>
+              <li class="relative"><a href="/rutas-turisticas" class="block text-sm my-3 mx-2"> <AdminPropiedades
+                width="60"
+                height="60"
+                />Rutas turisticas</a></li>
+            </ul>
+          </li>
+          <li><a class=" hover:text-green-second" href="/us">NOSOTROS</a></li>
+          <li><a class=" hover:text-green-second" href="#contact">CONTACTO</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+<style>
+.menu-desplegable:hover .submenu {
+  display: block;
+  z-index: 3;
+}
+</style> 

@@ -1,0 +1,88 @@
+---
+import FormBase from "../components/FormBase.astro";
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import LimpiarCasa from "../components/icons/LimpiarCasa.astro"
+import LimpiarOficina from "../components/icons/LimpiarOficina.astro"
+---
+
+<Layout title="Servicios | Rivjar">
+  <main class="">
+    <Header 
+    title1="ASEO DOMESTICO Y EMPRESARIAL" 
+    title2="ASEO DOMESTICO Y EMPRESARIAL" 
+    title3="ASEO DOMESTICO Y EMPRESARIAL" 
+    title4="ASEO DOMESTICO Y EMPRESARIAL" 
+    />
+    <section class="w-full flex flex-col items-center justify-center pb-12">
+      <div class="w-[79rem] flex justify-center items-center">
+        <div class="mt-[-100px]">
+          <a href="/aseo#formulario">
+            <LimpiarCasa/>
+          </a>
+          
+        </div>
+        <div class="pt-40">
+          <a href="/aseo#formulario">
+            <LimpiarOficina/>
+
+          </a>
+        </div>
+      </div>
+    </section>
+    <section
+      class="w-full flex flex-col items-center justify-center py-16 bg-green-second"
+    >
+      <div class="w-[79rem] flex flex-col p-4 gap-16">
+        <h1 class="text-white font-bold text-5xl text-center">
+          ¿Que incluye el servicio?
+        </h1>
+        <div class="flex items-center justify-around m-8">
+          <div class="flex flex-col items-center justify-center gap-4">
+            <img src="/servicio1.png" alt="" />
+            <h2 class="text-white font-bold text-4xl">Servicio 1</h2>
+          </div>
+          <div class="flex flex-col items-center justify-center gap-4">
+            <img src="/servicio2.png" alt="" />
+            <h2 class="text-white font-bold text-4xl">Servicio 2</h2>
+          </div>
+          <div class="flex flex-col items-center justify-center gap-4">
+            <img src="/servicio3.png" alt="" />
+            <h2 class="text-white font-bold text-4xl">Servicio 3</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="w-full flex flex-col items-center justify-center py-16 my-8"
+    >
+      <div class="w-[79rem] flex flex-col gap-16">
+        <h1 class="text-green-primary font-bold text-5xl text-center">
+          Brigadas de limpieza
+        </h1>
+
+        <div class="flex gap-16 mt-6 ">
+          <img src="/Limpieza.png" alt="" class="w-[28rem]" />
+          <div class="flex flex-col items-center justify-around">
+            <div class="flex flex-col gap-6">
+              <p class="w-[40rem]">
+                Nos dedicamos a mantener espacios impecables y saludables, tanto en hogares como en empresas. Realizamos limpieza profunda y desinfección de habitaciones, salas, baños y zonas comunes, así como la recolección y depósito adecuado de residuos. Su tranquilidad y comodidad son nuestra prioridad.
+              </p>
+              
+            </div>
+            <a href="" class="bg-green-second py-3 px-6 rounded text-white font-semibold">Contactanos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+	<!-- Form -->
+  <section class="w-full flex flex-col items-center justify-center py-16 my-8" id="formulario">
+    <div class="w-[79rem] flex flex-col gap-16">
+      
+      <FormBase/>
+      
+    </div>
+  </section>
+  </main>
+</Layout>

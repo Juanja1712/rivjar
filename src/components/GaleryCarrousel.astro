@@ -1,0 +1,99 @@
+---
+interface Props {
+	imageFrom1: string;
+    imageFrom2: string;
+    imageFrom3: String;
+    imageFrom4: String;
+    imageFrom5: String;
+    
+}
+
+const { imageFrom1, imageFrom2, imageFrom3, imageFrom4, imageFrom5 } = Astro.props
+---
+
+
+<div class="flex justify-center items-center mb-10">
+	<div id="controls-carousel" class="relative w-[55%]" data-carousel="static">
+		<!-- Carousel wrapper -->
+		<div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+			 <!-- Item 1 -->
+			<div class="duration-700 ease-in-out opacity-0" data-carousel-item>
+				<img src=`/Model_House1.jpeg`  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]" alt="...">
+			</div>
+			<!-- Item 2 -->
+			<div class="duration-700 ease-in-out opacity-100" data-carousel-item="active">
+				<img src=`/Model_House2.jpeg` class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]" alt="...">
+			</div>
+			<!-- Item 3 -->
+			<div class="duration-700 ease-in-out opacity-0" data-carousel-item>
+				<img src=`/Model_House3.jpeg`  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]" alt="...">
+			</div>
+			<!-- Item 4 -->
+			<div class="duration-700 ease-in-out opacity-0" data-carousel-item>
+				<img src=`/Model_House4.jpeg` class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]" alt="...">
+			</div>
+			<!-- Item 5 -->
+			<div class="duration-700 ease-in-out opacity-0" data-carousel-item>
+				<img src=`/Model_House5.jpeg`  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]" alt="...">
+			</div>
+		</div>
+		<!-- Slider controls -->
+		<button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+			<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 black:bg-gray-800/30 group-hover:bg-white/50 black:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white black:group-focus:ring-gray-800/70 group-focus:outline-none">
+				<svg class="w-4 h-4 text-white black:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+					<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+				</svg>
+				<span class="sr-only">Previous</span>
+			</span>
+		</button>
+		<button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+			<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 black:bg-gray-800/30 group-hover:bg-white/50 black:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white black:group-focus:ring-gray-800/70 group-focus:outline-none">
+				<svg class="w-4 h-4 text-white black:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+					<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+				</svg>
+				<span class="sr-only">Next</span>
+			</span>
+		</button>
+	</div>
+</div>
+
+<script>
+	function controlCarousel() {
+		const prevButton = document.querySelector('[data-carousel-prev]');
+		const nextButton = document.querySelector('[data-carousel-next]');
+		const carouselItems = document.querySelectorAll('[data-carousel-item]');
+		let currentIndex = 0;
+	
+		// Función para mostrar el elemento correspondiente en el carrusel
+		function showItem(index: number) {
+			carouselItems.forEach((item, i) => {
+				if (i === index) {
+					item.classList.add('opacity-100');
+					item.classList.remove('opacity-0');
+				} else {
+					item.classList.remove('opacity-100');
+					item.classList.add('opacity-0');
+				}
+			});
+		}
+	
+		// Evento clic para el botón "Anterior"
+		prevButton?.addEventListener('click', function() {
+			currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+			showItem(currentIndex);
+		});
+	
+		// Evento clic para el botón "Siguiente"
+		nextButton?.addEventListener('click', function() {
+			currentIndex = (currentIndex + 1) % carouselItems.length;
+			showItem(currentIndex);
+		});
+	}
+	
+	// Esperamos a que se cargue el contenido
+	document.addEventListener('DOMContentLoaded', function() {
+		controlCarousel(); // Llamamos a la función para iniciar el carrusel
+	});
+	
+	
+	</script>

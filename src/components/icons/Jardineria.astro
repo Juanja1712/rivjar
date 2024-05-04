@@ -1,0 +1,29 @@
+---
+interface Props {
+	width: String
+    height: String
+}
+
+const { width, height } = Astro.props;
+---
+
+<svg
+    class="mt-[18%]"
+    width=`${width}`
+    height=`${height}`
+    viewBox="0 0 60 60" 
+    fill="none" 
+    xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_9_30)">
+    <path d="M12.5 7.5H22.5" stroke="#6CCF45" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M17.5 7.5V37.5" stroke="#6CCF45" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M10 37.5H25V45C25 46.9891 24.2098 48.8968 22.8033 50.3033C21.3968 51.7098 19.4891 52.5 17.5 52.5C15.5109 52.5 13.6032 51.7098 12.1967 50.3033C10.7902 48.8968 10 46.9891 10 45V37.5Z" stroke="#6CCF45" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M35 52.5V45C35 43.0109 35.7902 41.1032 37.1967 39.6967C38.6032 38.2902 40.5109 37.5 42.5 37.5C44.4891 37.5 46.3968 38.2902 47.8033 39.6967C49.2098 41.1032 50 43.0109 50 45V52.5" stroke="#6CCF45" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M42.5 52.5V7.5" stroke="#6CCF45" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <defs>
+    <clipPath id="clip0_9_30">
+    <rect width="60" height="60" fill="white"/>
+    </clipPath>
+    </defs>
+</svg>

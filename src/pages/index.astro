@@ -1,0 +1,127 @@
+---
+import Layout from '../layouts/Layout.astro';
+import AdminPropiedades from '../components/icons/AdminPropiedades.astro';
+import Rutas from '../components/icons/Rutas.astro';
+import Aseo from '../components/icons/Aseo.astro';
+import Jardineria from '../components/icons/Jardineria.astro';
+import Header from '../components/Header.astro';
+import CarrouselInfinito from '../components/CarrouselInfinito.astro';
+import ContadorServicios from '../components/ContadorServicios.astro';
+---
+
+<Layout title="Inicio | Rivjar">
+	<Header 
+	title1="RUTAS TURISTICAS"
+	title2="JARDINERIA, PODA Y PAISAJISMO"
+	title3="ASEO DOMESTICO Y EMPRESARIAL"
+	title4="ADMINISTRACION DE PROPIEDADES"
+	imageFrom1="/Edeso_Plaza_de_la_Libertad_panoramica_04.jpg"
+	imageFrom2="/gardeningHeader-2.png"
+	imageFrom3="/Aseo-empresarial.jpg"
+	imageFrom4="/Administracion-propiedades.jpg"
+	href1="/rutas-turisticas"
+	href2="/jardineria"
+	href3="/aseo"
+	href4="/administracion-propiedades"
+	text1="Disfruta de la máxima experiencia y satisfacción explorando el oriente antioqueño."
+	text2="Transforma tu entorno con nuestro servicio de Jardinería. Creamos espacios verdes vibrantes y armoniosos."
+	text3="No te preocupes por la limpieza de tus espacios con nuestro servicio de aseo doméstico y empresaial."
+	text4="Conéctate con el lugar perfecto: alquila tu hogar o encuentra tu refugio ideal con nosotros."
+	/>
+
+	<div class="mx-auto max-w-[calc(100%-452px)] flex flex-col justify-center items-center text-center mt-[15rem]">
+		<img class="w-[50%]" src="/LOGO2.png" alt="">
+		<p class="text-2xl mt-20" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);">
+			En RIVJAR S.A.S, nos enorgullece ser líderes en la prestación de servicios administrativos y ambientales. Nuestro compromiso es resolver, facilitar y crear experiencias excepcionales para nuestros clientes, a través de una amplia gama de servicios diseñados para satisfacer sus necesidades.
+			 
+		Somos una empresa dedicada a proporcionar servicios especializados en jardinería, poda, paisajismo, aseo doméstico y empresarial, 
+		así como la administración eficiente de propiedades y unas experiencias unicas en nuestras rutas turisticas.</p>
+	</div>
+
+	<div class="w-full bg-[#6CCF45] h-[50rem] mt-[15rem] ">
+		<div class="grid grid-cols-2 justify-center items-center align-center">
+
+			<div class="flex justify-center items-center align-center mt-[25%]">
+				<h1 class="text-[white] text-6xl font-bold w-[16.25rem] h-[8.75rem] ">Nuestros servicios</h1>
+			</div>
+
+			<div class="grid grid-cols-2 w-[10rem] justify-center items-center align-center gap-x-[28rem] gap-y-10 mt-[10rem]">
+	
+	
+				<div class="h-[14.125rem] w-[25.3125rem] grid relative">
+					<img class="h-[14.125rem] w-[25.3125rem] rounded-[.5rem]"src="/Edeso_Plaza_de_la_Libertad_panoramica_04.jpg" alt="">
+					<div class="absolute h-[14.125rem] w-[25.3125rem] rounded-[.5rem] inset-0 bg-black opacity-0 hover:opacity-70 transition-opacity duration-300 flex justify-center ">
+						<Rutas
+						width="60"
+						height="60"
+						/>
+						<a href="/rutas-turisticas" class="mt-[21%] text-center text-2xl duration-300 hover:font-bold hover:text-[white] hover:flex font-bold absolute inset-0 flex justify-center items-center">Rutas turisticas</a>
+					</div>
+				</div>
+				<div class="h-[14.125rem] w-[25.3125rem] grid relative">
+					<img class="h-[14.125rem] w-[25.3125rem] rounded-[.5rem]"src="/Aseo-empresarial.jpg" alt="">
+					<div class="absolute h-[14.125rem] w-[25.3125rem] rounded-[.5rem] inset-0 bg-black opacity-0 hover:opacity-70 transition-opacity duration-300 flex justify-center ">
+						<Aseo
+						width="60"
+						height="60"
+						/>
+						<a href="/aseo" class="mt-[21%] text-center text-2xl duration-300 hover:font-bold hover:text-[white] hover:flex font-bold absolute inset-0 flex justify-center items-center">Aseo domestico y empresarial</a>
+					</div>
+				</div>
+				<div class="h-[14.125rem] w-[25.3125rem] grid relative">
+					<img class="h-[14.125rem] w-[25.3125rem] rounded-[.5rem]" src="/gardeningHeader-2.png" alt="">
+					<div class="absolute h-[14.125rem] w-[25.3125rem] rounded-[.5rem] inset-0 bg-black opacity-0 hover:opacity-70 transition-opacity duration-300 flex justify-center ">
+						<Jardineria
+						width="60"
+						height="60"
+						/>
+						<a href="/jardineria" class="mt-[21%] text-center text-2xl duration-300 hover:font-bold hover:text-[white] hover:flex font-bold absolute inset-0 flex justify-center items-center">Jardineria y podaje</a>
+					</div>
+				</div>
+				<div class="h-[14.125rem] w-[25.3125rem] grid relative">
+					<img class="h-[14.125rem] w-[25.3125rem] rounded-[.5rem]"src="/Administracion-propiedades.jpg" alt="">
+					<div class="absolute h-[14.125rem] w-[25.3125rem] rounded-[.5rem] inset-0 bg-black opacity-0 hover:opacity-70 transition-opacity duration-300 flex justify-center ">
+						<AdminPropiedades
+						width="60"
+						height="60"
+						/>
+						<a href="/administracion-propiedades" class="mt-[21%] text-center text-2xl duration-300 hover:font-bold hover:text-[white] hover:flex font-bold absolute inset-0 flex justify-center items-center">Administración de propiedades</a>
+					</div>
+				</div>
+				
+				
+			</div>
+			
+		</div>
+	</div>
+
+	<section class="px-4 lg:px-0">
+		<h1 class="mt-16 lg:mt-36 text-4xl lg:text-6xl font-bold mb-8 lg:mb-16 text-center text-green-800" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">¿Cómo funciona?</h1>
+		<p class="mx-auto max-w-2xl lg:max-w-[calc(100%-452px)] mt-8 lg:mt-20 px-4 lg:px-8 py-8 lg:py-12 text-xl lg:text-2xl leading-relaxed text-center text-gray-800" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);">
+			¡Bienvenido a la plataforma RIVJAR, donde la transformación de tus espacios comienza con un clic! Nuestra página es tu ventana a un mundo de servicios especializados en jardinería, poda, paisajismo, aseo doméstico y empresarial, así como administración de propiedades. Explorar es fácil: navega por nuestras secciones intuitivas, descubre los servicios que se adaptan a tus necesidades y obtén cotizaciones personalizadas en tiempo real. Desde la planificación de proyectos hasta la contratación de nuestros expertos, todo está al alcance de tus dedos. Nos enorgullece ofrecer una experiencia de usuario sin complicaciones. Simplificamos el proceso de solicitud y te mantenemos informado en cada etapa. Con RIVJAR, la excelencia está a solo unos clics de distancia.
+		</p>
+	</section>
+
+	<section>
+		<div>
+			<h1 class="mt-[10.875rem] mb-[7.875rem] text-6xl flex items-center font-bold text-center justify-center text-[#224E35]" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">Nuestros aliados</h1>
+		</div>
+
+		<CarrouselInfinito
+		imageFrom1="/Aliado-La_Martina.jpg"
+		imageFrom2="/Aliado-La_Presentacion.jpg"
+		imageFrom3="/Aliado-Massy_Motors.jpg"
+		imageFrom4="/Aliado-UCO.jpg"
+		imageFrom5="/Aliado-Impor_Gruas.jpg"
+		imageFrom6="/Aliado-Ventus_Apartamentos.jpg"
+		/>
+	</section>
+
+	<section>
+		<div>
+			<h1 class="mt-[5.875rem] text-6xl flex items-center font-bold text-center justify-center text-[#224E35]" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">Servicios prestados</h1>
+		</div>
+		<ContadorServicios/>
+	</section>
+
+</Layout>

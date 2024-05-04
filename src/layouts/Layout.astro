@@ -1,0 +1,49 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import WhatsappBtn from '../components/WhatsappBtn.astro';
+
+interface Props {
+	title: string;
+}	
+
+const {title}  = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<Navbar/>
+		<slot />
+		<WhatsappBtn/>
+		<Footer/>
+		<div class="fixed right-[-300px] bottom-4" style="z-index: -10;">
+			<img src="/LogoCasa2.png" class="opacity-75" alt="" width="700px">
+		</div>
+	</body>
+</html>
+<style is:global>
+	:root {
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		background-size: 224px;
+	}
+</style>

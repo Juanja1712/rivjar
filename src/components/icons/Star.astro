@@ -1,0 +1,34 @@
+---
+interface Props {
+	status: string;
+}
+
+const { status } = Astro.props;
+
+let colorFill : string;
+let colorStroke :string;
+
+if (status == "true") {
+    colorFill = "#52FF00"
+    colorStroke = "#52FF00"
+} else {
+    colorFill = "#FFFFFF"
+    colorStroke = "#000000"
+}
+---
+
+<svg
+  width="28"
+  height="28"
+  viewBox="0 0 28 28"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M14.0001 20.7084L6.79939 24.4942L8.17489 16.4757L2.34155 10.7975L10.3916 9.63086L13.9919 2.33569L17.5922 9.63086L25.6422 10.7975L19.8089 16.4757L21.1844 24.4942L14.0001 20.7084Z"
+    fill={colorFill}
+    stroke={colorStroke}
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"></path>
+</svg>

@@ -1,0 +1,102 @@
+---
+import Header2 from '../components/Header2.astro';
+import Layout from '../layouts/Layout.astro';
+import Cesped from '../components/icons/Cesped.astro';
+import CarrouselInfinitoJardineria from '../components/CarrouselInfinitoJardineria.astro';
+import FormBase from '../components/FormBase.astro';
+---
+<Layout title="Jardineria | Rivjar">
+	<main>
+		<Header2
+		title1="Expertos en jardinería y paisajismo, creando oasis naturales para tu hogar o empresa."
+		title2="Jardinería y paisajismo para hogares y empresas"
+		title3="Expertos en jardinería y paisajismo, creando oasis naturales para tu hogar o empresa."
+		title4="Jardinería y paisajismo para hogares y empresas"
+		imageFrom1="/gardeningHeader-1.JPG"
+		imageFrom2="/gardeningHeader-2.png"
+		imageFrom3="/gardeningHeader-1.JPG"
+		imageFrom4="/gardeningHeader-2.png"
+		/>
+
+		<section class="px-4 lg:px-0 ">
+			<h1 class="mt-[10%] lg:mt-36 text-4xl lg:text-6xl font-bold mb-8 lg:mb-16 text-center text-green-800" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">¿Cómo funciona?</h1>
+			<p class="mx-auto max-w-2xl lg:max-w-[calc(100%-452px)] mt-[10%] lg:mt-20 px-4 lg:px-8 py-8 lg:py-12 text-4xl lg:text-2xl leading-relaxed text-center text-[gray]" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);">
+				Transformamos espacios verdes en auténticos oasis de belleza y armonía. Nuestro equipo especializado se encarga del diseño, mantenimiento y cuidado de jardines, realizando tareas como corte de césped, poda de setos y árboles, chipiado y certificación de procesos ambientales. Confíe en nosotros para crear entornos naturales espectaculares.
+			</p>
+		</section>
+
+		<section class="flex flex-col justify-center items-center gap-[7.5rem] mt-[10%] mx-auto max-w-[calc(100%-452px)]">
+			<div class="w-[77.125rem] h-[15.625rem] flex justify-around items-center bg-[#6CCF45] rounded-[2rem]">
+				<Cesped
+				width="100"	
+				height="100"
+				/>
+				<div class="flex flex-col items-center text-center justify-center w-[80%]">
+					<h2 class="w-[] h-[] mb-12 text-green-primary text-4xl flex items-center font-bold" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">CÉSPED</h2>
+					<p class="text-green-primary/70 text-xl" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);">¡Despierta sobre una alfombra verde perfecta! Desde el sembrado inicial hasta el mantenimiento regular, hacemos que tu césped sea el orgullo de tu propiedad. ¡Deja que tu espacio exterior brille con nuestro cuidado experto del césped!</p>
+				</div>
+			</div>
+			<div class="w-[77.125rem] h-[15.625rem] flex justify-around items-center bg-[#6CCF45] rounded-[2rem]">
+				<div class="flex flex-col items-center text-center justify-center w-[80%]">
+					<h2 class="w-[] h-[] mb-12 text-green-primary text-4xl flex items-center font-bold" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">PLANTAS</h2>
+					<p class="text-green-primary/70 text-xl" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);">¡Floreciendo de color y vida! Desde las flores más delicadas hasta los arbustos robustos, nuestras manos verdes transforman tu jardín en un paraíso botánico.</p>
+				</div>
+				<Cesped
+				width="100"
+				height="100"
+				/>
+			</div>
+			<div class="w-[77.125rem] h-[15.625rem] flex justify-around items-center bg-[#6CCF45] rounded-[2rem]">
+				<Cesped
+				width="100"
+				height="100"
+				/>
+				<div class="flex flex-col items-center text-center justify-center w-[80%]">
+					<h2 class="w-[] h-[] mb-12 text-green-primary text-4xl flex items-center font-bold" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">CONTROL DE PLAGAS</h2>
+					<p class="text-green-primary/70 text-xl" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);">Una defensa natural contra los intrusos no deseados. Nuestro enfoque en el diseño y mantenimiento del jardín no solo embellece, sino que también protege. Con espacios organizados reducimos la presencia de plagas</p>
+				</div>
+			</div>
+			<div class="w-[77.125rem] h-[15.625rem] flex justify-around items-center bg-[#6CCF45] rounded-[2rem]">
+				<div class="flex flex-col items-center text-center justify-center w-[80%]">
+					<h2 class="w-[] h-[] mb-12 text-green-primary text-4xl flex items-center font-bold" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">MANTENIMIENTO</h2>
+					<p class="text-green-primary/70 text-xl" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);">Mantén tu oasis verde en su máximo esplendor. Desde poda de arbustos hasta riego y fertilización, nuestro equipo se encarga de cada detalle para que tú simplemente disfrutes de la belleza de tu jardín. </p>
+				</div>
+				<Cesped
+				width="100"
+				height="100"
+				/>
+			</div>
+		</section>
+
+		<section class="w-full flex flex-col items-center justify-center py-16 my-8" id="formulario">
+			<div class="w-[79rem] flex flex-col gap-16">
+				<FormBase/>
+			</div>
+		</section>
+
+		
+		<section>
+			<div>
+				<h1 class="mt-[5.875rem] mb-[7.875rem] text-6xl flex items-center font-bold text-center justify-center text-[#224E35]" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">NUESTROS TRABAJOS</h1>
+			</div>
+			<div class="mb-[8%]">
+				<CarrouselInfinitoJardineria
+				imageFrom1='/gardeningGallery-3.png'
+				imageFrom2='/gardeningGallery-2.JPG'
+				imageFrom3='/gardeningGallery-3.png'
+				imageFrom4='/gardeningGallery-4.png'
+				imageFrom5='/gardeningGallery-5.png'
+				imageFrom6='/gardeningGallery-6.png'
+				imageFrom7='/gardeningGallery-7.png'
+				imageFrom8='/gardeningGallery-8.png'
+				imageFrom9='/gardeningGallery-9.png'
+				imageFrom10='/gardeningGallery-10.png'
+				imageFrom11='/gardeningGallery-11.png'
+				imageFrom12='/gardeningGallery-12.png'
+				imageFrom13='/gardeningGallery-13.png'
+				imageFrom14='/gardeningGallery-14.png'
+				/>
+			</div>
+		</section>
+	</main>
+</Layout>

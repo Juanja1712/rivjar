@@ -1,0 +1,28 @@
+---
+interface Props {
+	width: String
+    height: String
+}
+
+const { width, height } = Astro.props;
+---
+
+<svg 
+    class="mt-[18%] flex items-center justify-center"
+    width=`${width}`
+    height=`${height}`
+    viewBox="0 0 60 60" 
+    fill="none" 
+    xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_8_22)">
+    <path d="M5 45C5 46.9891 5.79018 48.8968 7.1967 50.3033C8.60322 51.7098 10.5109 52.5 12.5 52.5C14.4891 52.5 16.3968 51.7098 17.8033 50.3033C19.2098 48.8968 20 46.9891 20 45C20 43.0109 19.2098 41.1032 17.8033 39.6967C16.3968 38.2902 14.4891 37.5 12.5 37.5C10.5109 37.5 8.60322 38.2902 7.1967 39.6967C5.79018 41.1032 5 43.0109 5 45Z" stroke="#6CCF45" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M40 45C40 46.9891 40.7902 48.8968 42.1967 50.3033C43.6032 51.7098 45.5109 52.5 47.5 52.5C49.4891 52.5 51.3968 51.7098 52.8033 50.3033C54.2098 48.8968 55 46.9891 55 45C55 43.0109 54.2098 41.1032 52.8033 39.6967C51.3968 38.2902 49.4891 37.5 47.5 37.5C45.5109 37.5 43.6032 38.2902 42.1967 39.6967C40.7902 41.1032 40 43.0109 40 45Z" stroke="#6CCF45" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M30 47.5V37.5L22.5 30L35 20L40 27.5H47.5" stroke="#6CCF45" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M40 12.5C40 13.163 40.2634 13.7989 40.7322 14.2678C41.2011 14.7366 41.837 15 42.5 15C43.163 15 43.7989 14.7366 44.2678 14.2678C44.7366 13.7989 45 13.163 45 12.5C45 11.837 44.7366 11.2011 44.2678 10.7322C43.7989 10.2634 43.163 10 42.5 10C41.837 10 41.2011 10.2634 40.7322 10.7322C40.2634 11.2011 40 11.837 40 12.5Z" stroke="#6CCF45" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <defs>
+    <clipPath id="clip0_8_22">
+    <rect width="60" height="60" fill="white"/>
+    </clipPath>
+    </defs>
+</svg>

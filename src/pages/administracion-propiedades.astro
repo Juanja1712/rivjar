@@ -1,0 +1,80 @@
+---
+import Header3 from '../components/Header3.astro';
+import CasaCard from '../components/CasaCard.astro';
+import GaleryCarrousel from '../components/GaleryCarrousel.astro';
+import Layout from '../layouts/Layout.astro';
+import Header4 from '../components/Header4.astro';
+---
+
+<Layout title="Admin propiedades | Rivjar">
+	<main>
+		<Header4 
+		title1="LLANOGRANDE, ANTIOQUIA"
+		imageFrom1="/Model_House1.jpeg"
+		href1="/place1"
+		/>
+		<!--title2="RIONEGRO, ANTIOQUIA"
+		title3="LA CEJA, ANTIOQUIA"
+		title4="ENVIGADO, ANTIOQUIA"
+		imageFrom2="/Administracion-propiedades2.webp"
+		imageFrom3="/Administracion-propiedades3.jpg"
+		imageFrom4="/Administracion-propiedades4.jpg"
+		href2="/place1"
+		href3="/place1"
+		href4="/place1" -->
+
+		<div class="mx-auto max-w-[calc(100%-452px)]">
+			<div class="flex justify-center items-center gap-[5.125rem] mt-48">
+				<CasaCard
+				imagePlace="/Model_House1.jpeg"
+				namePlace="Llanogrande, Antioquia"
+				description="Espectacular casa campestre en Llanogrande con piscina privada y vistas panorámicas, ideal para escapadas relajantes en la naturaleza."
+				price="$ 250.000 COP"
+				linkPlace="/place1"
+				/>
+				<CasaCard
+				imagePlace="/Model_House1.jpeg"
+				namePlace="Llanogrande, Antioquia"
+				description="Espectacular casa campestre en Llanogrande con piscina privada y vistas panorámicas, ideal para escapadas relajantes en la naturaleza."
+				price="$ 250.000 COP"
+				linkPlace="/place1"
+				/>
+				<CasaCard
+				imagePlace="/Model_House1.jpeg"
+				namePlace="Llanogrande, Antioquia"
+				description="Espectacular casa campestre en Llanogrande con piscina privada y vistas panorámicas, ideal para escapadas relajantes en la naturaleza."
+				price="$ 250.000 COP"
+				linkPlace="/place1"
+				/>
+			</div>
+		</div>
+
+	</main>
+
+	<section class="mx-auto max-w-[calc(100%-452px)] mt-[15.5625rem]">
+		<h1 class="text-[#224E35] text-6xl flex items-center font-bold mb-[2.25rem] text-center justify-center" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">¿Como funciona?</h1>
+		<div class="flex justify-center items-center space-x-[6.875rem] mt-[7.0625rem] ">
+			<h1 class="text-[5rem] text-[#224E35]" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);">1</h1>
+			<p class="text-[1.4rem] text-[gray]" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsam nam, necessitatibus velit quis ratione nisi esse praesentium. Reprehenderit rem ex consequuntur?</p>
+		</div>
+		<div class="flex justify-center items-center space-x-[6.875rem] mt-[7.0625rem] ">
+			<p class="text-[1.4rem] text-[gray]" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsam nam, necessitatibus velit quis ratione nisi esse praesentium. Reprehenderit rem ex consequuntur?</p>
+			<h1 class="text-[5rem] text-[#224E35]" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);">2</h1>
+		</div>
+		<div class="flex justify-center items-center space-x-[6.875rem] mt-[7.0625rem] ">
+			<h1 class="text-[5rem] text-[#224E35]" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);">3</h1>
+			<p class="text-[1.4rem] text-[gray]" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsam nam, necessitatibus velit quis ratione nisi esse praesentium. Reprehenderit rem ex consequuntur?</p>
+		</div>
+	</section>
+
+	<section>
+		<h1 class="mt-[5.93rem] text-6xl flex items-center font-bold mb-[2.25rem] text-center justify-center text-[#224E35]" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">¿Qué ofrecemos?</h1>
+		<GaleryCarrousel
+		imageFrom1=""
+		imageFrom2=""
+		imageFrom3=""
+		imageFrom4=""
+		imageFrom5=""
+		/>
+	</section>
+</Layout>

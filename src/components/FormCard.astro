@@ -1,0 +1,21 @@
+---
+interface Props {
+    titleCard1: string
+    titleCard2: string
+    titleCard3: string
+}
+
+const { titleCard1, titleCard2, titleCard3 } = Astro.props
+---
+
+<section class="flex justify-around items-center w-[77.125rem] ml-[8.9rem]">
+    <div class="w-[21.87rem] h-[5rem] flex justify-center items-center border-[3px] rounded-[.8rem] border-[#6CCF45] text-center cursor-pointer hover:bg-[#6CCF45] bg-[white] hover:text-[white]">
+        <h1 class=" text-2xl">{titleCard1}</h1>
+    </div>
+    <div class="w-[21.87rem] h-[5rem] flex justify-center items-center border-[3px] rounded-[.8rem] border-[#6CCF45] text-center cursor-pointer hover:bg-[#6CCF45] bg-[white] hover:text-[white]">
+        <h1 class=" text-2xl">{titleCard2}</h1>
+    </div>
+    <div class="w-[21.87rem] h-[5rem] flex justify-center items-center border-[3px] rounded-[.8rem] border-[#6CCF45] text-center cursor-pointer hover:bg-[#6CCF45] bg-[white] hover:text-[white]">
+        <h1 class=" text-2xl">{titleCard3}</h1>
+    </div>
+</section>

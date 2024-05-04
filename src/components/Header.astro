@@ -1,0 +1,139 @@
+---
+interface Props {
+	title1: string;
+	title2: string;
+	title3: string;
+	title4: string;
+    imageFrom1: string;
+    imageFrom2: string;
+    imageFrom3: string;
+    imageFrom4: string;
+    href1: String
+    href2: String
+    href3: String
+    href4: String
+    text1: String
+    text2: String
+    text3: String
+    text4: String
+}
+
+const { title1, title2, title3, title4, imageFrom1, imageFrom2, imageFrom3, imageFrom4, href1, href2, href3, href4, text1, text2, text3, text4 } = Astro.props;
+---
+
+<!-- <section style={{ backgroundImage: `url(${imageFrom})` }} class="h-[450px] border-1 border-black relative">
+    <h1 class="text-white text-5xl font-bold h-[70px] w-[980px] absolute bottom-[4.875rem] left-[14.125rem] m-0">{title}</h1>
+</section> -->
+
+<!--style={{ backgroundImage: `url(${imageFrom1})`}}-->
+<div  class="sliders-box" class="overflow-hidden">
+    <ul>
+        <li style={{ backgroundImage: `url(${imageFrom1})`}} class="h-[37.5rem] bg-green-second">
+            <div class="text">
+                <a href=`${href1}`>{title1}</a>
+                <p>{text1}</p>
+            </div>
+
+        </li>
+        <li  style={{ backgroundImage: `url(${imageFrom2})`}} class="h-[37.5rem] bg-green-second">
+            <div class="text">
+                <a href=`${href2}`>{title2}</a>
+                <p>{text2}</p>
+            </div>
+
+        </li>
+        <li style={{ backgroundImage: `url(${imageFrom3})`}} class="h-[37.5rem] bg-green-second bg-top">
+            <div class="text">
+                <a href=`${href3}`>{title3}</a>
+                <p>{text3}</p>
+            </div>
+
+        </li>
+        <li style={{ backgroundImage: `url(${imageFrom4})`}} class="h-[37.5rem] bg-green-second bg-bottom">
+            <div class="text">
+                <a href=`${href4}`>{title4}</a>
+                <p>{text4}</p>
+            </div>
+
+        </li>
+    </ul>
+</div> 
+
+
+<style> 
+.image{
+    height: 37.5rem;
+}
+
+.sliders-box{
+    overflow: hidden;
+}
+
+.sliders-box ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 16s infinite alternate ease-in-out;
+}
+
+.sliders-box li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center center;
+    height: 29rem;
+}
+
+.text{
+    position: absolute;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    width: 90%;
+}
+
+.text p, a{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.text a{
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.sliders-box img{
+    width: 100%;
+}
+
+@keyframes slide {
+    0% { margin-left: 0;}
+    20% { margin-left: 0;}
+    
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+    
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;}
+    
+    75% { margin-left: -300%;}
+    100% { margin-left: -300%;}
+}
+
+@media(max-width: 991px){
+    .sliders-box{
+        width: 100%;
+    }
+    .text h2{
+        font-size: 5rem;
+    }
+    .text p{
+        font-size: 1.5rem;
+    }
+}
+</style>

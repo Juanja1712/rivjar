@@ -1,0 +1,107 @@
+---
+interface Props {
+	title1: string;
+
+    imageFrom1: string;
+
+    href1: String
+
+}
+
+const { title1, imageFrom1, href1 } = Astro.props;
+---
+
+<div class="sliders-box" class="overflow-hidden">
+    <ul>
+        <li class="h-[29rem]" style={{ backgroundImage: `url(${imageFrom1})`}}>
+            <div class="text">
+                <h1>{title1}</h1>
+                <a href=`${href1}`>Ver más</a>
+            </div>
+
+        </li>
+    </ul>
+</div> 
+
+
+<style> 
+.image{
+    height: 29rem;
+}
+
+.sliders-box{
+    overflow: hidden;
+}
+
+.sliders-box ul{
+    display: flex;
+    padding: 0;    
+}
+
+.sliders-box li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center center;
+}
+
+.text{
+    position: absolute;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    width: 90%;
+}
+
+.text h1{
+    font-size: 4rem;
+    font-weight: 800;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+a{
+    margin-top: 2rem;
+    padding: .4rem;
+    background-color: #6ccf45;
+    border-radius: .5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-weight: bold;
+}
+
+.sliders-box img{
+    width: 100%;
+}
+
+@keyframes slide {
+    0% { margin-left: 0;}
+    20% { margin-left: 0;}
+    
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+    
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;}
+    
+    75% { margin-left: -300%;}
+    100% { margin-left: -300%;}
+}
+
+@media(max-width: 991px){
+    .sliders-box{
+        width: 100%;
+    }
+    .text h2{
+        font-size: 5rem;
+    }
+    .text p{
+        font-size: 1.5rem;
+    }
+}
+</style>

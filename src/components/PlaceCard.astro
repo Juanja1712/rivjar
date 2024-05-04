@@ -1,0 +1,12 @@
+---
+interface Props {
+    imagePlace: String;
+}
+
+const {imagePlace} = Astro.props
+---
+
+<div>
+    <img class="rounded-lg" src=`${imagePlace}`>
+    <p>hola mundo</p>
+</div>

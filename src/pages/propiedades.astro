@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CasaCard from '../components/CasaCard.astro';
+---
+
+<Layout title="Propiedades | Rivjar">
+	<main>
+		<div class="mx-auto max-w-[calc(100%-452px)]">
+			<main class="grid grid-cols-3 justify-center items-center gap-[5.125rem] mt-32 mb-24">
+				<CasaCard
+                imagePlace="/casa.jpg"
+				namePlace="Llanogrande, Antioquia"
+				description="Lorem ipsum dolor sit amet adipisicing."
+				price="$ 250.000 COP"
+                linkPlace="/place1"
+				/>
+			</main>
+		</div>
+	</main>
+</Layout>
+

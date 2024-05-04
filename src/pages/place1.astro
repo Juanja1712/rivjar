@@ -1,0 +1,88 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PropietiesDescriptions from '../components/PropietiesDescriptions.astro';
+---
+
+<Layout title="Propiedaded 1 | Rivjar">
+	<main class="">
+		<h1 class="text-[#224E35] text-6xl flex items-center font-bold mb-[2%] text-center justify-center mt-[5%]" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">HOSPEDAJE DE LUJO</h1>
+		<section class="w-full flex flex-col items-center justify-center py-16 my-8">
+			<div class="w-[79rem] flex flex-col gap-16 items-center">
+				<div class="w-full flex flex-col justify-center items-center gap-5">
+					<div class="relative" >
+						<div id="img-primary">
+							<img src="/Model_House1.jpeg" alt="" class="w-[800px] h-[450px]" />
+						</div>
+						<div class="absolute w-full h-full top-0 flex items-end">
+							<div class="flex-col flex w-full bg-gray-800/80 px-16 py-8">
+							<h2 class="font-bold text-3xl text-green-second" id="title-primary">
+								
+							</h2>
+							<p class="text-white text-lg">Un refugio elegante con servicios exclusivos y vistas impresionantes. Tu escapada perfecta comienza aquí.</p>
+							</div>
+						</div>
+					</div>
+					<div class="w-full flex justify-between">
+						<div class="" id="img-1">
+							<img src="/Model_House1.jpeg" alt="" class="w-[250px] h-[150px]" />
+						</div>
+						<div id="img-2">
+							<img src="/Model_House2.jpeg" alt="" class="w-[250px] h-[150px]" />
+						</div>
+						<div id="img-3">
+							<img src="/Model_House3.jpeg" alt="" class="w-[250px] h-[150px]" />
+						</div>
+						<div id="img-4">
+							<img src="/Model_House4.jpeg" alt="" class="w-[250px] h-[150px]" />
+						</div>
+						<div id="img-5">
+							<img src="/Model_House5.jpeg" alt="" class="w-[250px] h-[150px]" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+    <section>
+        <PropietiesDescriptions
+        title='Gran mansión en Llanogrande'
+        huespedes="° 4 Huespedes"
+        habitaciones='° 3 Habitaciones '
+        camas='° 4 Camas'
+        baños='° 1 Baño'
+		description='Descubre el epitome del lujo en nuestra casa exclusiva en Llanogrande. Rodeada de naturaleza exuberante y vistas majestuosas, esta residencia ofrece un oasis de confort y elegancia. Disfruta de espacios amplios y luminosos, diseño de vanguardia y servicios de primera clase. Una experiencia inolvidable te espera en este refugio de ensueño.'
+        comodidad1='Wifi 300mg'
+        comodidad2='2 Parqueaderos'
+        comodidad3='Balcón con vistas'
+        comodidad4='Zona de trabajo'
+        comodidad5='Calefacción'
+        />
+    </section>
+	<script>
+		document.getElementById('img-1')?.addEventListener("click", function () {
+			document.getElementById('img-primary').innerHTML = '<img src="/Model_House1.jpeg" alt="" class="w-[800px] h-[450px]" />';
+			document.getElementById('title-primary').innerHTML = ``;
+	
+		});
+		document.getElementById('img-2')?.addEventListener("click", function () {
+			document.getElementById('img-primary').innerHTML = '<img src="/Model_House2.jpeg" alt="" class="w-[800px] h-[450px]" />';
+			document.getElementById('title-primary').innerHTML = '';
+	
+		});
+		document.getElementById('img-3')?.addEventListener("click", function () {
+			document.getElementById('img-primary').innerHTML = '<img src="/Model_House3.jpeg" alt="" class="w-[800px] h-[450px]" />';
+			document.getElementById('title-primary').innerHTML = '';
+	
+		});
+		document.getElementById('img-4')?.addEventListener("click", function () {
+			document.getElementById('img-primary').innerHTML = '<img src="/Model_House4.jpeg" alt="" class="w-[800px] h-[450px]" />';
+			document.getElementById('title-primary').innerHTML = '';
+	
+		});
+		document.getElementById('img-5')?.addEventListener("click", function () {
+			document.getElementById('img-primary').innerHTML = '<img src="/Model_House5.jpeg" alt="" class="w-[800px] h-[450px]" />';
+			document.getElementById('title-primary').innerHTML = '';
+	
+		});
+	  </script>
+</Layout>

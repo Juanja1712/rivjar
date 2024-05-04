@@ -1,0 +1,211 @@
+---
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import Comentario from "../components/Comentario.astro";
+import FormBase from "../components/FormBase.astro";
+import Location from "../components/icons/Location.astro";
+---
+
+<Layout title="Rutas turisticas | Rivjar">
+  <main>
+    <Header title="RUTAS TURISTICAS" />
+    <section
+      class="w-full flex flex-col items-center justify-center py-16 my-8"
+    >
+      <div class="w-[79rem] flex flex-col gap-16 items-center">
+        <h1 class="text-green-primary font-bold text-5xl text-center">
+          Nuestros destinos
+        </h1>
+        <div class="grid grid-cols-10 grid-rows-3 w-11/12">
+          <div class="col-span-4 row-start-1 h-[14rem] relative xdd">
+            <img src="/Edeso_Plaza_de_la_Libertad_panoramica_04.jpg" alt="" class="w-full h-full" />
+            <div
+              class="absolute top-0 px-8 pb-8 bg-green-primary/80 w-full h-full hidden flex flex-col justify-end items-end gap-2"
+            >
+              <div class="flex-col flex w-full">
+                <h2 class="font-bold text-2xl text-green-second">
+                  RUTA TURISTICA HISTORICA DE RIONEGRO
+                </h2>
+                <p class="text-white text-sm">Tierra conocida como “Cuna de la libertad“, por ser una de las ciudades más importantes durante la época de independencia.</p>
+              </div>
+              <a
+                href="/rutas/city-tour"
+                class="text-white bg-green-second py-1 px-1 flex justify-center w-[100px] rounded"
+                >Ver mas</a
+              >
+            </div>
+          </div>
+          <div class="col-span-3 row-start-1 h-[14rem] relative">
+            <img
+              src="/guatape.jpg"
+              alt=""
+              class="w-full h-full hover:opacity-80"
+            />
+          </div>
+          <div class="col-span-3 row-start-1 h-[14rem]">
+            <img
+              src="/guatape.jpg"
+              alt=""
+              class="w-full h-full hover:opacity-80"
+            />
+          </div>
+          <div class="col-span-6 col-start-1 row-span-2 h-[28rem]">
+            <img
+              src="/guatape.jpg"
+              alt=""
+              class="w-full h-full hover:opacity-80"
+            />
+          </div>
+          <div class="col-span-4 col-start-7 row-start-2 h-[14rem]">
+            <img
+              src="/guatape.jpg"
+              alt=""
+              class="w-full h-full hover:opacity-80"
+            />
+          </div>
+          <div class="col-span-4 col-start-7 row-start-3 h-[14rem]">
+            <img
+              src="/guatape.jpg"
+              alt=""
+              class="w-full h-full hover:opacity-80"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="bg-green-second w-full h-screen flex flex-col items-center justify-start py-16"
+    >
+      <div class="w-[79rem] flex flex-col justify-center items-center gap-12">
+        <h1 class="text-white font-bold text-5xl text-center">
+          Rutas turisticas
+        </h1>
+        <div class="w-[30rem] relative">
+          <img src="/Map.png" alt="" />
+          <div
+            class="xd absolute top-[-160px] right-0 flex flex-col justify-center items-center gap-1"
+          >
+            <div class="rounded bg-gray-100 p-3 opacity-0">
+              <div class="flex flex-col gap-2 justify-center items-center">
+                <img src="/Edeso_Plaza_de_la_Libertad_panoramica_04.jpg" alt="" class="w-[200px] rounded" />
+                <h2 class="font-bold text-green-primary text-sm">
+                  Ruta Historica de Rionegro
+                </h2>
+                <a
+                  href="/rutas/city-tour"
+                  class="text-white bg-green-second py-1 px-1 flex justify-center w-[100px] rounded"
+                  >Ver mas</a
+                >
+              </div>
+            </div>
+            <a href="/rutas/city-tour" class=""> <Location /> </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-full flex flex-col items-center justify-start py-16">
+      <div class="w-[79rem]">
+        <Comentario />
+      </div>
+    </section>
+    <section class="w-full flex flex-col items-center justify-start py-16">
+      <div class="w-[79rem] flex flex-col items-center justify-center gap-16">
+        <h1 class="text-green-primary font-bold text-5xl text-center">
+          Galería
+        </h1>
+        <!-- galeria -->
+        <!-- <div class="w-auto grid grid-cols-2 gap-8">
+          <GaleryImagen url="/guatape.jpg" />
+          <GaleryImagen url="/guatape.jpg" />
+          <GaleryImagen url="/guatape.jpg" />
+          <GaleryImagen url="/guatape.jpg" />
+          <GaleryImagen url="/guatape.jpg" />
+          <GaleryImagen url="/guatape.jpg" />
+        </div> -->
+        <section
+      class="w-full flex flex-col items-center justify-center py-16 my-8"
+    >
+      <div class="w-[79rem] flex flex-col gap-16 items-center">
+        <div class="w-full flex flex-col justify-center items-center gap-5">
+          <div class="relative" >
+            <div id="img-primary">
+                <img src="/guatape.jpg" alt="" class="w-[800px] h-[450px]" />
+
+            </div>
+            <div class="absolute w-full h-full top-0 flex items-end">
+              <div class="flex-col flex w-full bg-gray-800/80 px-16 py-8">
+                <h2 class="font-bold text-3xl text-green-second" id="title-primary">
+                  Ruta LLanoGrande
+                </h2>
+                <p class="text-white text-lg">Hola</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full flex justify-between">
+            <div class="" id="img-1">
+                <img src="/Limpieza.png" alt="" class="w-[250px] h-[150px]" />
+            </div>
+            <div id="img-2">
+                <img src="/guatape.jpg" alt="" class="w-[250px] h-[150px]" />
+            </div>
+            <div id="img-3">
+                <img src="/Edeso_Plaza_de_la_Libertad_panoramica_04.jpg" alt="" class="w-[250px] h-[150px]" />
+            </div>
+            <div id="img-4">
+                <img src="/gardeningGallery-2.JPG" alt="" class="w-[250px] h-[150px]" />
+            </div>
+            <div id="img-5">
+                <img src="/guatape.jpg" alt="" class="w-[250px] h-[150px]" />
+
+            </div>
+          </div>
+        </div>
+        <!-- ----------------------------------------- -->
+
+        
+      </div>
+    </section>
+      </div>
+    </section>
+    <section class="w-full flex flex-col items-center justify-start py-16">
+      <div class="w-[79rem] flex flex-col gap-16">
+        <h1 class="text-green-primary font-bold text-5xl text-center">
+          Planea tu viaje ahora!
+        </h1>
+        <FormBase />
+      </div>
+    </section>
+  </main>
+  <script>
+    document.getElementById('img-1')?.addEventListener("click", function () {
+        document.getElementById('img-primary').innerHTML = '<img src="/Limpieza.png" alt="" class="w-[800px] h-[450px]" />';
+        document.getElementById('title-primary').innerHTML = 'Ruta 2';
+
+    });
+    document.getElementById('img-2')?.addEventListener("click", function () {
+        document.getElementById('img-primary').innerHTML = '<img src="/guatape.jpg" alt="" class="w-[800px] h-[450px]" />';
+        document.getElementById('title-primary').innerHTML = 'Ruta 3';
+
+    });
+    document.getElementById('img-3')?.addEventListener("click", function () {
+        document.getElementById('img-primary').innerHTML = '<img src="/Edeso_Plaza_de_la_Libertad_panoramica_04.jpg" alt="" class="w-[800px] h-[450px]" />';
+        document.getElementById('title-primary').innerHTML = 'Ruta 4';
+
+    });
+    document.getElementById('img-4')?.addEventListener("click", function () {
+        document.getElementById('img-primary').innerHTML = '<img src="/gardeningGallery-2.JPG" alt="" class="w-[800px] h-[450px]" />';
+        document.getElementById('title-primary').innerHTML = 'Ruta 5';
+
+    });
+  </script>
+</Layout>
+
+<style>
+  .xd:hover div {
+    opacity: 100;
+    z-index: 300;
+  }
+  .xdd:hover div {
+    display: inline-flex;
+  }
+</style>
